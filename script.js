@@ -51,11 +51,11 @@ const winnerCheck = (choice, computerChoice) => {
   }
 
   if (choice === computerChoice) {
-    text.innerHTML = "draw";
+    text.innerHTML = "Draw 🤝";
   }
 
-  user.innerHTML = `Тоглогчийн ялсан тоо: ${userScore}`;
-  com.innerHTML = `Компьютер ялсан тоо: ${computerScore}`;
+  user.innerHTML = `Your win number: ${userScore}`;
+  com.innerHTML = `AI win number: ${computerScore}`;
 
   if (userScore === 5) {
     reset.style.display = "block";
@@ -63,7 +63,8 @@ const winnerCheck = (choice, computerChoice) => {
     rock.disabled = true;
     paper.disabled = true;
     scissors.disabled = true;
-    text.innerHTML = `Та түрүүлж ${userScore} удаа ялсанаар тоглоом дууслаа. Танд баяр хүргье! 😎 🎉`;
+    text.innerHTML = `You have won ${userScore} times, 
+    Congratulations! 😎 🎉`;
   }
 
   if (computerScore === 5) {
@@ -72,7 +73,8 @@ const winnerCheck = (choice, computerChoice) => {
     rock.disabled = true;
     paper.disabled = true;
     scissors.disabled = true;
-    text.innerHTML = `Компьютер түрүүлж ${computerScore} удаа ялсанаар тоглоом дууслаа. Та дахин оролдоно уу?  😉`;
+    text.innerHTML = `AI have won ${computerScore} times and the GAME OVER, 
+    Would you play again?  😉`;
   }
 };
 
@@ -87,8 +89,8 @@ const resetGame = () => {
   paper.disabled = false;
   scissors.disabled = false;
 
-  user.innerHTML = `Тоглогчийн ялсан тоо: ${userScore}`;
-  com.innerHTML = `Компьютер ялсан тоо: ${computerScore}`;
+  user.innerHTML = `Your win number: ${userScore}`;
+  com.innerHTML = `AI win number: ${computerScore}`;
 };
 
 const computerChoicer = () => {

@@ -7,23 +7,47 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Rock-Scissors-Paper</h1>
+    <div class="display">
+      <h1 class="title">Rock-Scissors-Paper</h1>
 
-    <div class="choices">
-      <button id="rock" onclick="turn('rock')">✊🏻</button>
+      <div class="choices">
+        <button id="rock" onclick="turn('rock')">
+          <img
+            class="human-arm"
+            src="./image/rock-human.png"
+            alt="Rock-Human"
+          />
+        </button>
 
-      <button id="scissors" onclick="turn('scissors')">✌🏻</button>
+        <button id="scissors" onclick="turn('scissors')">
+          <img
+            class="human-arm"
+            src="./image/scissors-human.png"
+            alt="Rock-Human"
+          />
+        </button>
 
-      <button id="paper" onclick="turn('paper')">✋🏻</button>
+        <button id="paper" onclick="turn('paper')">
+          <img
+            class="human-arm"
+            src="./image/paper-human.png"
+            alt="Rock-Human"
+          />
+        </button>
+      </div>
+
+      <div class="text-position play__text">
+        <h1 id="text" class="text"></h1>
+
+        <p id="user"></p>
+
+        <p id="com"></p>
+
+        <button id="reset" onclick="resetGame()" class="reset__btn">
+          Play again!
+        </button>
+      </div>
     </div>
-
-    <h1 id="text"></h1>
-
-    <p id="user"></p>
-
-    <p id="com"></p>
-
-    <button id="reset" onclick="resetGame()">play again!</button>
 
     <script src="./script.js"></script>
   </body>
