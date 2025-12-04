@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Scissoors-Paper</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Rock-Scissoors-Paper</h1>
+    <h1>Rock-Scissors-Paper</h1>
 
-    <button id="rock" onclick="turn('rock')">✊🏻</button>
+    <div class="choices">
+      <button id="rock" onclick="turn('rock')">✊🏻</button>
 
-    <button id="scissors" onclick="turn('scissors')">✌🏻</button>
+      <button id="scissors" onclick="turn('scissors')">✌🏻</button>
 
-    <button id="paper" onclick="turn('paper')">✋🏻</button>
+      <button id="paper" onclick="turn('paper')">✋🏻</button>
+    </div>
 
     <h1 id="text"></h1>
+
+    <p id="user"></p>
+
+    <p id="com"></p>
+
+    <button id="reset" onclick="resetGame()">play again!</button>
 
     <script src="./script.js"></script>
   </body>

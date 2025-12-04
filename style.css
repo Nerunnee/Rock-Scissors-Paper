@@ -19,3 +19,19 @@
     cursor: pointer;
   }
 }
+
+#reset {
+  display: none;
+}
+
+#text {
+  display: none;
+}
+
+#user {
+  display: none;
+}
+
+#com {
+  display: none;
+}
