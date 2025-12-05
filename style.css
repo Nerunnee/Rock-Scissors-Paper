@@ -85,3 +85,12 @@
   background-color: #294d61;
   margin-top: 50px;
 }
+
+.score__system {
+  display: flex;
+  justify-content: center;
+  gap: 290px;
+  font-size: 40px;
+  color: #f6f8ff;
+  margin-bottom: 100px;
+}

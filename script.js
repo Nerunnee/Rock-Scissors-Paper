@@ -21,7 +21,7 @@ const winnerCheck = (choice, computerChoice) => {
   user.style.display = "block";
   com.style.display = "block";
   if (choice === "rock" && computerChoice === "scissors") {
-    text.innerHTML = "🎉 You win 🎉 😃";
+    text.innerHTML = "You win 🎉 😃";
     userScore++;
   }
 
@@ -31,7 +31,7 @@ const winnerCheck = (choice, computerChoice) => {
   }
 
   if (choice === "scissors" && computerChoice === "paper") {
-    text.innerHTML = "🎉 You win 🎉 😃";
+    text.innerHTML = "You win 🎉 😃";
     userScore++;
   }
 
@@ -41,7 +41,7 @@ const winnerCheck = (choice, computerChoice) => {
   }
 
   if (choice === "paper" && computerChoice === "rock") {
-    text.innerHTML = "🎉 You win 🎉 😃";
+    text.innerHTML = "You win 🎉 😃";
     userScore++;
   }
 
@@ -51,11 +51,11 @@ const winnerCheck = (choice, computerChoice) => {
   }
 
   if (choice === computerChoice) {
-    text.innerHTML = "Draw 🤝";
+    text.innerHTML = "It's draw 🤝";
   }
 
-  user.innerHTML = `Your win number: ${userScore}`;
-  com.innerHTML = `AI win number: ${computerScore}`;
+  user.innerHTML = `Your won score: ${userScore}`;
+  com.innerHTML = `AI won score: ${computerScore}`;
 
   if (userScore === 5) {
     reset.style.display = "block";
@@ -73,7 +73,7 @@ const winnerCheck = (choice, computerChoice) => {
     rock.disabled = true;
     paper.disabled = true;
     scissors.disabled = true;
-    text.innerHTML = `AI have won ${computerScore} times and the GAME OVER, 
+    text.innerHTML = `GAME OVER, 
     Would you play again?  😉`;
   }
 };
@@ -89,8 +89,8 @@ const resetGame = () => {
   paper.disabled = false;
   scissors.disabled = false;
 
-  user.innerHTML = `Your win number: ${userScore}`;
-  com.innerHTML = `AI win number: ${computerScore}`;
+  user.innerHTML = `Your won score: ${userScore}`;
+  com.innerHTML = `AI won score: ${computerScore}`;
 };
 
 const computerChoicer = () => {

@@ -10,6 +10,11 @@
     <div class="display">
       <h1 class="title">Rock-Scissors-Paper</h1>
 
+      <div class="score__system">
+        <p id="user"></p>
+        <p id="com"></p>
+      </div>
+
       <div class="choices">
         <button id="rock" onclick="turn('rock')">
           <img
@@ -38,11 +43,6 @@
 
       <div class="text-position play__text">
         <h1 id="text" class="text"></h1>
-
-        <p id="user"></p>
-
-        <p id="com"></p>
-
         <button id="reset" onclick="resetGame()" class="reset__btn">
           Play again!
         </button>
